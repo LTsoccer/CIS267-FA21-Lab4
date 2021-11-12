@@ -1,21 +1,26 @@
 
 html, body {
   height: 100%;
-  overflow-y: hidden;
-
+  padding: 15px;
 }
 
 #party {
+  margin-top: 70px;
   background-color: #fff;
-  position:sticky;
   left: 0;
   top: 50px;
-  min-height: 30vh;
-  max-height: 35vh;
+  min-height: 40vh;
+  max-height: 100vh;
   width: 100%;
 }
 
 #party-pokemon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#filtered-pokemon {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,12 +32,24 @@ html, body {
 }
 
 #all-pokemon {
-  overflow: scroll;
   height: 50vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
+}
+
+form {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+nav p {
+  color: white;
+}
+
+nav h3 {
+  color: white;
 }
 
 
@@ -70,6 +87,11 @@ html, body {
     width:120%;
     margin-top: 00px;
   }
+
+  .inline {
+    display: flex;
+    justify-content: space-between;
+  }
   
   .pokemon .info {
     margin-top: 20px;
@@ -96,10 +118,10 @@ html, body {
   }
   
   footer {
-    min-height: 100px;
+    min-height: 50px;
     padding: 1rem;
-    background-color: #ddd;
-    color: black;
+    background-color: grey;
+    color: white;
     text-align: center;
     display: flex;
 
