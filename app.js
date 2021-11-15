@@ -212,7 +212,7 @@ if(p.name === "tapu-koko"){
           console.log(pokemonCopy.guid);
           this.filteredPokemon.push(  pokemonCopy );
             };}
-        if (value.includes(p.id)) {
+        if (p.id.toString().includes(value.toString())) {
             const pokemonCopy = {...p};
           pokemonCopy.guid = this.getGUID();
           console.log(p.name);
